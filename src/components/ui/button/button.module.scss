@@ -1,0 +1,59 @@
+@mixin button {
+  all: unset;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  flex-shrink: 0;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 0.375rem 1.75rem;
+
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.20s;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+
+.primary {
+  @include button;
+  background-color: var(--color-yellow-300);
+
+  &:hover {
+    background-color: var(--color-yellow-500);
+  }
+
+  &:active {
+    background-color: var(--color-yellow-100);
+  }
+}
+
+.secondary {
+  @include button;
+
+
+  border: 1px solid var(--color-yellow-500);
+
+  &:hover {
+    background-color: var(--color-yellow-100);
+
+  }
+
+  &:active {
+    background-color: var(--color-yellow-300);
+  }
+}
