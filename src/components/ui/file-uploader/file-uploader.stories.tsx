@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { FileUpload } from "./file-upload.tsx";
+import { FileUploader } from "./";
 
 const meta = {
   title: "Component/FileUpload",
-  component: FileUpload,
-} satisfies Meta<typeof FileUpload>;
+  component: FileUploader,
+} satisfies Meta<typeof FileUploader>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

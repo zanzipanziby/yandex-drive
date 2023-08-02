@@ -1,6 +1,6 @@
 import { Card } from "./components/ui/card";
 import { Typography } from "./components/ui/typography";
-import { Button } from "./components/ui/button";
+import { FileUploader } from "./components/ui/file-upload";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Typography as={"h1"} variant={"h1"}>
           Add files to Yandex Drive
         </Typography>
-        <Button variant={"primary"}>Accept</Button>
+        <FileUploader />
       </Card>
     </div>
   );
