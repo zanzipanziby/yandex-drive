@@ -1,6 +1,6 @@
 import { Card } from "./components/ui/card";
 import { Typography } from "./components/ui/typography";
-import { FileUploader } from "./components/ui/file-upload";
+import { FileUploader } from "./components/ui/file-uploader";
 
 function App() {
   return (
