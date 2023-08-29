@@ -7,5 +7,6 @@ type CardPropsType = {
 };
 
 export const Card = ({ children, className = "" }: CardPropsType) => {
+  
   return <div className={`${s.card} ${className}`}>{children}</div>;
 };
